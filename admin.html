@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Metadata JSON Generator | Anson's Drive</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Component-specific overrides to blend well with site */
+    .admin-container {
+      max-width: 700px;
+      margin: 3rem auto;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+    .admin-container h2, .admin-container h3 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .admin-container label {
+      color: #ddd;
+      font-weight: 600;
+      display: block;
+      margin: 1rem 0 0.3rem;
+    }
+    .admin-container input[type="text"],
+    .admin-container input[type="date"],
+    .admin-container input[type="file"] {
+      width: 100%;
+      padding: 0.6rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: rgba(255,255,255,0.05);
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    .admin-container button {
+      width: 100%;
+      padding: 0.7rem;
+      background-color: #0074f0;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .admin-container button:hover {
+      background-color: #005fd4;
+    }
+    #output {
+      background-color: rgba(255,255,255,0.05);
+      color: #fff;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      white-space: pre-wrap;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="admin-container">
+    <h2>📁 Metadata JSON Generator</h2>
+
+    <label for="file">Choose File</label>
+    <input type="file" id="file" accept=".pdf,.png,.jpg,.jpeg" required>
+
+    <label for="caption">Caption</label>
+    <input type="text" id="caption" placeholder="Enter your file caption" required>
+
+    <label for="tags">Tags (comma separated)</label>
+    <input type="text" id="tags" placeholder="AI, Resume, Machine Learning" required>
+
+    <label for="updated">Updated Date</label>
+    <input type="date" id="updated">
+
+    <button onclick="generateJSON()">Generate JSON</button>
+
+    <pre id="output">{ }</pre>
+  </div>
+
+  <script>
+    function generateJSON() {
+      const fileInput = document.getElementById("file");
+      const caption = document.getElementById("caption").value.trim();
+      const tags = document.getElementById("tags").value.split(",").map(tag => tag.trim()).filter(Boolean);
+      const updatedRaw = document.getElementById("updated").value;
+
+      if (!fileInput.files.length || !caption || !updatedRaw) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      const fileName = fileInput.files[0].name;
+      const [yyyy, mm, dd] = updatedRaw.split("-");
+      const formattedDate = `${dd}-${mm}-${yyyy}`;
+
+      const output = {
+        filename: fileName,
+        caption: caption,
+        tags: tags,
+        updated: formattedDate
+      };
+
+      document.getElementById("output").textContent = JSON.stringify(output, null, 2);
+    }
+  </script>
+</body>
+</html>

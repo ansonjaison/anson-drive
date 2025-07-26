@@ -124,6 +124,15 @@ header {
     outline: none;
 }
 
+.page-description {
+    text-align: center;
+    color: var(--secondary-text-color);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    line-height: 1.7;
+}
+
 /* --- Grid & Card Layout --- */
 .grid-container {
     display: grid;
@@ -188,6 +197,7 @@ header {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
+    min-height: 3.2em; /* Aligns content below by reserving space for ~2 lines */
 }
 
 .file-item-content a {
@@ -236,9 +246,83 @@ header {
     border-top: 1px solid var(--border-color);
     font-size: 0.85rem;
     color: var(--secondary-text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy-link-btn {
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    line-height: 0; /* Prevents container from stretching */
+}
+
+.copy-link-btn:hover {
+    background-color: var(--secondary-surface-color);
+}
+
+.copy-link-btn svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--secondary-text-color);
+    vertical-align: middle;
+}
+
+.portfolio-link {
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+}
+
+.portfolio-link a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.portfolio-link a:hover {
+    text-decoration: underline;
 }
 
 /* --- Utility & Footer --- */
+#scroll-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    background-color: var(--secondary-surface-color);
+    border: 1px solid var(--border-color);
+    color: var(--primary-text-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+
+#scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#scroll-to-top:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+}
+
 .hidden {
     display: none !important;
 }
@@ -255,6 +339,118 @@ footer {
     margin-top: 4rem;
     padding-top: 2rem;
     border-top: 1px solid var(--border-color);
-    color: var(--secondary-text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-nav {
+    order: 1;
+}
+
+#footer-home-button {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--primary-text-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
     font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#footer-home-button:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.social-links {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color-hover);
+}
+
+.copyright {
+    order: 3;
+    font-size: 0.9rem;
+    color: var(--secondary-text-color);
+}
+
+
+/* --- Responsive Design --- */
+@media (max-width: 480px) {
+    #app-container {
+        padding: 1.5rem 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    #header-title {
+        font-size: 1.8rem;
+    }
+
+    #search-container {
+        width: 100%;
+    }
+
+    .view-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .view-header h2 {
+        margin-right: 0;
+    }
+
+    #controls-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .grid-container {
+        gap: 1rem;
+    }
+
+    .page-description {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .portfolio-link {
+        margin-top: 2rem;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        margin-top: 3rem;
+    }
+
+    #scroll-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        right: 15px;
+        bottom: 15px;
+    }
 }

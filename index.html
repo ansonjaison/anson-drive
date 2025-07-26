@@ -1,60 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anson’s Drive</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anson’s Drive</title>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://ansonblogs.netlify.app/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://ansonblogs.netlify.app/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://ansonblogs.netlify.app/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="https://ansonblogs.netlify.app/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="https://ansonblogs.netlify.app/android-chrome-512x512.png">
+  <link rel="manifest" href="https://ansonblogs.netlify.app/site.webmanifest">
+  <link rel="shortcut icon" href="https://ansonblogs.netlify.app/favicon.ico">
+
+  <meta property="og:title" content="Anson’s Drive" />
+  <meta property="og:description" content="A digital space containing Anson Jaison's certificates, resume, and other documents." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://anson-jaison.lovable.app/" />
+  <meta property="og:image" content="https://ansonblogs.netlify.app/android-chrome-512x512.png" />
+  <meta property="og:site_name" content="Anson's Drive" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@i_ansonjaison" />
+  <meta name="twitter:title" content="Anson’s Drive" />
+  <meta name="twitter:description" content="A digital space containing Anson Jaison's certificates, resume, and other documents." />
+  <meta name="twitter:image" content="https://ansonblogs.netlify.app/android-chrome-512x512.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="app-container">
+    <header>
+      <h1 id="header-title">Anson’s Drive</h1>
+      <div id="search-container" class="hidden">
+        <input type="search" id="search-input" placeholder="Search by caption or tag...">
+      </div>
+    </header>
 
-    <div id="app-container">
-        <header>
-            <h1 id="header-title">Anson’s Drive</h1>
-            <div id="search-container" class="hidden">
-                <input type="search" id="search-input" placeholder="Search by caption or tag...">
+    <main>
+      <div id="files-view" class="hidden">
+        <div class="view-header">
+          <button id="back-button">&larr; Back to Folders</button>
+          <h2 id="folder-name-title"></h2>
+          <div id="controls-container">
+            <div class="sort-controls">
+              <label for="sort-select">Sort by:</label>
+              <select id="sort-select">
+                <option value="date-desc">Newest First</option>
+                <option value="date-asc">Oldest First</option>
+                <option value="name-asc">Name (A-Z)</option>
+                <option value="name-desc">Name (Z-A)</option>
+              </select>
             </div>
-        </header>
+          </div>
+        </div>
+        <div id="files-grid" class="grid-container"></div>
+        <p id="no-results-message" class="hidden">No files match your search.</p>
+      </div>
 
-        <main>
-            <div id="files-view" class="hidden">
-                <div class="view-header">
-                    <button id="back-button">&larr; Back to Folders</button>
-                    <h2 id="folder-name-title"></h2>
-                    <div id="controls-container">
-                        <div class="sort-controls">
-                            <label for="sort-select">Sort by:</label>
-                            <select id="sort-select">
-                                <option value="date-desc">Newest First</option>
-                                <option value="date-asc">Oldest First</option>
-                                <option value="name-asc">Name (A-Z)</option>
-                                <option value="name-desc">Name (Z-A)</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div id="files-grid" class="grid-container">
-                    </div>
-                 <p id="no-results-message" class="hidden">No files match your search.</p>
-            </div>
+      <div id="folders-view">
+        <p class="page-description">A curated collection of my professional documents, including certificates and my resume.</p>
+        <div id="folders-grid" class="grid-container"></div>
+        <p class="portfolio-link"><a href="https://anson-jaison.lovable.app/" target="_blank" rel="noopener noreferrer">View Portfolio</a></p>
+      </div>
+    </main>
 
-            <div id="folders-view">
-                 <div class="view-header">
-                    <h2>Folders</h2>
-                </div>
-                <div id="folders-grid" class="grid-container">
-                    </div>
-            </div>
-        </main>
+    <footer>
+        <div class="footer-nav">
+            <button id="footer-home-button">Home</button>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/ansonjaison" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://in.linkedin.com/in/anson-jaison" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://twitter.com/i_ansonjaison" target="_blank" rel="noopener noreferrer">X Account</a>
+        </div>
+        <p class="copyright">&copy; 2025 Anson’s Drive. All rights reserved.</p>
+    </footer>
+  </div>
 
-        <footer>
-            <p>&copy; 2025 Anson’s Drive. All rights reserved.</p>
-        </footer>
-    </div>
-
-    <script src="script.js"></script>
+  <a href="#" id="scroll-to-top" title="Go to top">&uarr;</a>
+  <script src="script.js"></script>
 </body>
 </html>

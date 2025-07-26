@@ -1,8 +1,176 @@
 [
   {
+    "filename": "AutoCAD Workshop IEEE PES SB VJCET.pdf",
+    "caption": "AutoCAD Workshop IEEE PES SB VJCET",
+    "tags": ["AutoCAD", "Workshop"],
+    "updated": "25-06-2025"
+  },
+  {
+    "filename": "Generative AI Workshop - 360DigiTMG - ASAP.pdf",
+    "caption": "Generative AI Workshop - 360DigiTMG - ASAP",
+    "tags": ["Generative AI", "Workshop"],
+    "updated": "09-07-2025"
+  },
+  {
+    "filename": "Ilahia - Innovision 2k25 Project Exhibition.pdf",
+    "caption": "Ilahia - Innovision 2k25 Project Exhibition",
+    "tags": ["Exhibition", "Project"],
+    "updated": "23-07-2025"
+  },
+  {
+    "filename": "Infosys - Introduction to Data Science.pdf",
+    "caption": "Infosys - Introduction to Data Science",
+    "tags": ["AI", "Data Science"],
+    "updated": "11-07-2025"
+  },
+  {
     "filename": "InternPe AL-ML Internship.pdf",
-    "caption": "InternPe AL-ML Internship Certificate",
-    "tags": ["AI", "ML", "Internship", "Remote"],
-    "updated": "2024-06-15"
+    "caption": "InternPe AL-ML Internship",
+    "tags": ["AI", "Machine Learning", "Internship"],
+    "updated": "23-07-2025"
+  },
+  {
+    "filename": "OfficeMaster PowerBi Workshop.pdf",
+    "caption": "OfficeMaster PowerBi Workshop",
+    "tags": ["Power BI", "Workshop"],
+    "updated": "15-06-2025"
+  },
+  {
+    "filename": "Python using AI Workshop - AI for Techies.pdf",
+    "caption": "Python using AI Workshop - AI for Techies",
+    "tags": ["AI", "Python", "Workshop"],
+    "updated": "22-06-2025"
+  },
+  {
+    "filename": "Bodhi DataVoid Trivia 2025 Coordinator.pdf",
+    "caption": "Bodhi DataVoid Trivia 2025 Coordinator",
+    "tags": ["Coordinator", "Trivia", "Bodhi", "Tech Fest"],
+    "updated": "10-03-2025"
+  },
+  {
+    "filename": "Bodhi Dodge or Detonate.pdf",
+    "caption": "Bodhi Dodge or Detonate",
+    "tags": ["Tech Fest", "Bodhi"],
+    "updated": "23-03-2025"
+  },
+  {
+    "filename": "Hexinox - Applied Artificial Intelligence Workshop.pdf",
+    "caption": "Hexinox - Applied Artificial Intelligence Workshop",
+    "tags": ["AI", "Workshop"],
+    "updated": "23-03-2025"
+  },
+  {
+    "filename": "Hexinox - Corporate Training Session.pdf",
+    "caption": "Hexinox - Corporate Training Session",
+    "tags": ["Coporate Training", "Workshop"],
+    "updated": "23-03-2025"
+  },
+  {
+    "filename": "Hexinox - Gen.AI Online Hackathon.pdf",
+    "caption": "Hexinox - Gen.AI Online Hackathon",
+    "tags": ["Generative AI"],
+    "updated": "23-03-2025"
+  },
+  {
+    "filename": "Infinyt3D Pvt. Ltd - Internship.pdf",
+    "caption": "Infinyt3D Pvt. Ltd - Internship",
+    "tags": ["Internship", "3D Printing"],
+    "updated": "23-03-2025"
+  },
+  {
+    "filename": "Infosys Introduction to OpenAi GPT Models",
+    "caption": "Infosys Introduction to OpenAi GPT Models",
+    "tags": ["OpenAI", "GPT Models", "AI"],
+    "updated": "26-07-2024"
+  },
+  {
+    "filename": "Internship Python & ML - Revertech.pdf",
+    "caption": "Internship Python & ML - Revertech",
+    "tags": ["Internship", "Python", "Machine Learning"],
+    "updated": "11-08-2024"
+  },
+  {
+    "filename": "Bodhi 24 Squid Game ",
+    "caption": "Bodhi 24 Squid Game ",
+    "tags": ["Bodhi", "Tech Fest"],
+    "updated": "10-03-2024"
+  },
+  {
+    "filename": "NPTEL-Introduction to programming in C.pdf",
+    "caption": "NPTEL-Introduction to programming in C",
+    "tags": ["NPTEL", "C Programming"],
+    "updated": "10-04-2024"
+  },
+  {
+    "filename": "DataVoid Ethical Hacking Participation Certificate ",
+    "caption": "DataVoid Ethical Hacking Workshop",
+    "tags": ["DataVoid", "Ethical Hacking"],
+    "updated": "19-11-2023"
+  },
+  {
+    "filename": "RedTeamHackerAcademy-Internship-S3-IV",
+    "caption": "RedTeam Hacker Academy Cybersecurity Internship",
+    "tags": ["Internship", "RedTeam Hacker Academy"],
+    "updated": "04-12-2023"
+  },
+  {
+    "filename": "Bodhi 2023 - Mystery Trail.pdf",
+    "caption": "Bodhi 2023 - Mystery Trail",
+    "tags": ["Bodhi", "Tech Fest"],
+    "updated": "01-05-2023"
+  },
+  {
+    "filename": "Bodhi 2023 - Opulence Hunt.pdf",
+    "caption": "Bodhi 2023 - Opulence Hunt",
+    "tags": ["Bodhi", "Tech Fest"],
+    "updated": "01-05-2023"
+  },
+  {
+    "filename": "DataVoid_Trivia_Certificate.pdf",
+    "caption": "DataVoid Trivia Participation Certificate",
+    "tags": ["DataVoid", "Trivia"],
+    "updated": "01-05-2023"
+  },
+  {
+    "filename": "Foss VJCET - DevOps Workshop.pdf",
+    "caption": "Foss VJCET - DevOps Workshop",
+    "tags": ["Foss", "DevOps", "Workshop"],
+    "updated": "01-05-2023"
+  },
+  {
+    "filename": "Foss VJCET - Flutter Workshop.pdf",
+    "caption": "Foss VJCET - Flutter Workshop",
+    "tags": ["Foss", "Flutter", "Workshop"],
+    "updated": "01-05-2023"
+  },
+  {
+    "filename": "Foss VJCET - Git & Github Workshop.pdf",
+    "caption": "Foss VJCET - Git & Github Workshop",
+    "tags": ["Foss", "Git", "GitHub", "Workshop"],
+    "updated": "01-05-2023"
+  },
+  {
+    "filename": "Foss VJCET - Opensource Workshop.pdf",
+    "caption": "Foss VJCET - Opensource Workshop",
+    "tags": ["Foss", "Opensource", "Workshop"],
+    "updated": "01-05-2023"
+  },
+  {
+    "filename": "Infosys - Fundamentals of the C Language Variables & Datatypes.pdf",
+    "caption": "Infosys - Fundamentals of the C Language Variables & Datatypes",
+    "tags": ["Infosys", "C"],
+    "updated": "01-05-2023"
+  },
+  {
+    "filename": "Infosys - Time Management.pdf",
+    "caption": "Infosys - Time Management",
+    "tags": ["Infosys", "Time Management"],
+    "updated": "01-05-2023"
+  },
+  {
+    "filename": "MPOWER Power Communication Workshop.pdf",
+    "caption": "MPOWER Power Communication Workshop",
+    "tags": ["Soft Skills", "Communication", "Workshop"],
+    "updated": "01-05-2023"
   }
 ]
