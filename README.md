@@ -8,31 +8,6 @@ This README provides a comprehensive overview of the project, its features, setu
 
 ---
 
-## Table of Contents
-
-- [Features](#features) ✨
-- [Demo](#demo) 🌐
-- [Project Structure](#project-structure) 🗂️
-- [Technologies Used](#technologies-used) 🛠️
-- [How It Works](#how-it-works) ⚙️
-  - [Frontend Interface](#frontend-interface) 🖥️
-  - [Metadata Management](#metadata-management) 📝
-  - [File Sorting and Filtering](#file-sorting-and-filtering) 🔍
-  - [Copy Link Functionality](#copy-link-functionality) 📋
-  - [Scroll-to-Top Feature](#scroll-to-top-feature) ⬆️
-- [Setup Instructions](#setup-instructions) 🏗️
-  - [Prerequisites](#prerequisites) ✅
-  - [Installation](#installation) 📦
-  - [Running Locally](#running-locally) 💻
-  - [Deploying to Cloudflare Pages](#deploying-to-cloudflare-pages) ☁️
-- [File Metadata Format](#file-metadata-format) 📄
-- [Contributing](#contributing) 🤝
-- [Future Enhancements](#future-enhancements) 🚀
-- [License](#license) 📜
-- [Acknowledgements](#acknowledgements) 🙌
-
----
-
 ## Features ✨
 
 - **Responsive Design**: Adapts seamlessly to various screen sizes, from mobile devices to desktops, ensuring a consistent user experience. 📱💻
