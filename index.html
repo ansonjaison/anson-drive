@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anson’s Drive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app-container">
+        <header>
+            <h1 id="header-title">Anson’s Drive</h1>
+            <div id="search-container" class="hidden">
+                <input type="search" id="search-input" placeholder="Search by caption or tag...">
+            </div>
+        </header>
+
+        <main>
+            <div id="files-view" class="hidden">
+                <div class="view-header">
+                    <button id="back-button">&larr; Back to Folders</button>
+                    <h2 id="folder-name-title"></h2>
+                    <div id="controls-container">
+                        <div class="sort-controls">
+                            <label for="sort-select">Sort by:</label>
+                            <select id="sort-select">
+                                <option value="date-desc">Newest First</option>
+                                <option value="date-asc">Oldest First</option>
+                                <option value="name-asc">Name (A-Z)</option>
+                                <option value="name-desc">Name (Z-A)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div id="files-grid" class="grid-container">
+                    </div>
+                 <p id="no-results-message" class="hidden">No files match your search.</p>
+            </div>
+
+            <div id="folders-view">
+                 <div class="view-header">
+                    <h2>Folders</h2>
+                </div>
+                <div id="folders-grid" class="grid-container">
+                    </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Anson’s Drive. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
