@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Featured Files | Anson’s Drive</title>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://ansonblogs.netlify.app/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://ansonblogs.netlify.app/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://ansonblogs.netlify.app/favicon-16x16.png">
+  <link rel="manifest" href="https://ansonblogs.netlify.app/site.webmanifest">
+  <link rel="shortcut icon" href="https://ansonblogs.netlify.app/favicon.ico">
+
+  <meta property="og:title" content="Featured Files | Anson's Drive" />
+  <meta property="og:description" content="A curated collection of featured documents from Anson's Drive." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://anson-drive.page.dev/featured.html" />
+  <meta property="og:image" content="https://anson-drive.pages.dev/public/Images/Anson's%20Drive%20Screenshot.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    #search-container {
+      margin-bottom: 2.5rem;
+    }
+  </style>
+  
+</head>
+<body>
+  <div id="app-container">
+    <header>
+      <h1 id="header-title">Featured Files</h1>
+    </header>
+
+    <main>
+      <div id="search-container">
+        <input type="search" id="search-input" placeholder="Search by caption or tag...">
+      </div>
+      <div class="view-header">
+        <a href="index.html" id="back-button" style="text-decoration: none;">&larr; Back to Home</a>
+        <div id="controls-container">
+          <div class="sort-controls">
+            <label for="sort-select">Sort by:</label>
+            <select id="sort-select">
+              <option value="default" selected>Default Order</option>
+              <option value="date-desc">Newest First</option>
+              <option value="date-asc">Oldest First</option>
+              <option value="name-asc">Name (A-Z)</option>
+              <option value="name-desc">Name (Z-A)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div id="files-grid" class="grid-container"></div>
+      <p id="no-results-message" class="hidden">No files match your search.</p>
+      <p id="loading-message">Loading featured files...</p>
+    </main>
+
+    <footer>
+        <div class="footer-nav">
+            <button id="footer-home-button" onclick="window.location.href='index.html'">Home</button>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/ansonjaison" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://in.linkedin.com/in/anson-jaison" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://twitter.com/i_ansonjaison" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+        <p class="copyright">&copy; 2025 Anson’s Drive. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <a href="#" id="scroll-to-top" title="Go to top">&uarr;</a>
+  <script src="featured.js"></script>
+</body>
+</html>

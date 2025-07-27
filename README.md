@@ -1,6 +1,6 @@
 # Anson’s Drive 📂
 
-<img width="1919" height="971" alt="image" src="https://github.com/user-attachments/assets/0504e3dd-1268-401c-b6ac-f982afe242b3" />
+<img width="1919" height="971" alt="Anson's Drive Preview" src="https://anson-drive.pages.dev/public/Images/Anson's%20Drive%20Preview.png" />
 
 **Anson’s Drive** is a sleek, modern web application designed to showcase a curated collection of professional documents, such as certificates and resumes, in an organized, user-friendly interface. Hosted on **Cloudflare Pages** (accessible at [https://anson-drive.pages.dev/](https://anson-drive.pages.dev/)), this project was planned with assistance from **ChatGPT**, and coded with the help of **Gemini** and **Grok**. It features a responsive design, intuitive navigation, and a robust metadata management system for organizing and displaying files. The application supports folder browsing, file searching, sorting, and metadata generation for easy document management. 🚀
 
@@ -20,12 +20,13 @@ This README provides a comprehensive overview of the project, its features, setu
 - **Scroll-to-Top Button**: Smoothly scroll back to the top of the page when needed. ⬆️
 - **Dark Theme**: A modern dark-themed UI with customizable CSS variables for easy theming. 🌙
 - **Cloudflare Pages Hosting**: Fast, secure, and scalable deployment with automatic HTTPS. ☁️
+- **Featured Files Section**: A dedicated page (`featured.html`) to highlight specific files from various folders, enhancing visibility of key documents. ⭐
 
 ---
 
 ## Demo 🌐
 
-Visit the live demo at [https://anson-drive.pages.dev/](https://anson-drive.pages.dev/) to explore the application. You can browse folders, search for files, and use the admin page to generate metadata. 🚀
+Visit the live demo at [https://anson-drive.pages.dev/](https://anson-drive.pages.dev/) to explore the application. You can browse folders, search for files, use the admin page to generate metadata, and check out the new featured files section. 🚀
 
 ---
 
@@ -45,17 +46,24 @@ anson-drive/
 │   ├── Random/
 │   │   ├── metadata.json
 │   │   └── [Random files]
+│   ├── Images/
+│   │   └── [Preview images for meta open graphs]
 ├── index.html
 ├── admin.html
+├── featured.html
 ├── script.js
+├── featured.js
 ├── style.css
 ├── README.md
 ```
 
 - **`public/`**: Contains folders for Certificates, Resume, and Random, each with a `metadata.json` file and associated files/preview images. 📁
+- **`public/Images/`**: Stores preview images used for meta open graphs to enhance social media sharing and SEO. 🖼️
 - **`index.html`**: The main page for browsing folders and files. 🏠
 - **`admin.html`**: A utility page for generating `metadata.json` files. 🛠️
+- **`featured.html`**: A page to showcase featured files with search and sort capabilities, linked from the main index. ⭐
 - **`script.js`**: Handles all frontend logic, including folder/file rendering, search, sorting, and copy functionality. ⚙️
+- **`featured.js`**: Manages the featured files page logic, including file loading and display from `featured.json`. ⚙️
 - **`style.css`**: Defines the dark-themed, responsive UI with CSS variables. 🎨
 - **`README.md`**: This file, documenting the project. 📖
 
@@ -90,6 +98,10 @@ The application is built as a single-page application (SPA) with two main views:
    - Shows a grid of files with preview images, captions, tags, updated dates, and action buttons (View/Download, Copy Link). 📜
    - Includes a search bar to filter files by caption or tags and a dropdown to sort files. 🔍
    - A "Back to Folders" button returns to the Folders View. 🔙
+
+3. **Featured Files View** (`featured.html`):
+   - Displays a curated list of featured files from `featured.json`, with search and sort options similar to the Files View. ⭐
+   - Links back to the main index for full folder browsing. 🔙
 
 ### Metadata Management 📝
 
@@ -140,9 +152,11 @@ Each folder in the `public/` directory contains a `metadata.json` file with an a
    ```
 
 2. **Prepare the `public/` Directory**:
-   - Create folders (`certificates`, `Resume`, `Random`) inside `public/`. 📁
+   - Create folders (`certificates`, `Resume`, `Random`, `Images`) inside `public/`. 📁
    - Add files and preview images to each folder. 🖼️
    - Create a `metadata.json` file for each folder using `admin.html` or manually (see [File Metadata Format](#file-metadata-format)). 📝
+   - Add a `featured.json` file in the root directory listing featured file paths (see example in `featured.json`). ⭐
+   - Place preview images for meta open graphs in the `Images/` folder. 🖼️
 
 ### Running Locally 💻
 
@@ -153,7 +167,7 @@ Each folder in the `public/` directory contains a `metadata.json` file with an a
    ```
    Access the app at `http://localhost:8080`. 🌐
 
-2. Open `index.html` in a browser to view the Folders View or `admin.html` for metadata generation. 🖥️
+2. Open `index.html` in a browser to view the Folders View, `featured.html` for featured files, or `admin.html` for metadata generation. 🖥️
 
 ### Deploying to Cloudflare Pages ☁️
 
@@ -218,12 +232,12 @@ Contributions are welcome! To contribute:
    ```
 
 3. **Make Changes**:
-   - Follow the coding style in `script.js` and `style.css`. 📝
+   - Follow the coding style in `script.js`, `featured.js`, and `style.css`. 📝
    - Ensure responsiveness and test across browsers. 🖥️
 
 4. **Test Locally**:
    - Verify functionality using a local server. ✅
-   - Check `admin.html` for metadata generation. 🛠️
+   - Check `admin.html` for metadata generation and `featured.html` for featured file display. 🛠️
 
 5. **Submit a Pull Request**:
    - Push your changes and create a PR with a clear description of the changes. 📬
