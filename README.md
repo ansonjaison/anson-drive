@@ -1,8 +1,8 @@
 # Anson’s Drive 📂
 
-<img width="1919" height="971" alt="Anson's Drive Preview" src="https://anson-drive.pages.dev/public/Images/Anson's%20Drive%20Preview.png" />
+<img width="1919" height="971" alt="Anson's Drive Preview" src="https://anson-drive.netlify.app/public/Images/Anson's%20Drive%20Preview.png" />
 
-**Anson’s Drive** is a sleek, modern web application designed to showcase a curated collection of professional documents, such as certificates and resumes, in an organized, user-friendly interface. Hosted on **Cloudflare Pages** (accessible at [https://anson-drive.pages.dev/](https://anson-drive.pages.dev/)), this project was planned with assistance from **ChatGPT**, and coded with the help of **Gemini** and **Grok**. It features a responsive design, intuitive navigation, and a robust metadata management system for organizing and displaying files. The application supports folder browsing, file searching, sorting, and metadata generation for easy document management. 🚀
+**Anson’s Drive** is a sleek, modern web application designed to showcase a curated collection of professional documents, such as certificates and resumes, in an organized, user-friendly interface. Hosted on **Netlify** (accessible at [https://anson-drive.netlify.app/](https://anson-drive.netlify.app/)), this project was planned with assistance from **ChatGPT**, and coded with the help of **Gemini** and **Grok**. It features a responsive design, intuitive navigation, and a robust metadata management system for organizing and displaying files. The application supports folder browsing, file searching, sorting, and metadata generation for easy document management. 🚀
 
 This README provides a comprehensive overview of the project, its features, setup instructions, technical details, and contribution guidelines. 📖
 
@@ -19,14 +19,14 @@ This README provides a comprehensive overview of the project, its features, setu
 - **Copy Link Feature**: Copy file URLs to the clipboard with visual feedback (copy to checkmark transition). 📋
 - **Scroll-to-Top Button**: Smoothly scroll back to the top of the page when needed. ⬆️
 - **Dark Theme**: A modern dark-themed UI with customizable CSS variables for easy theming. 🌙
-- **Cloudflare Pages Hosting**: Fast, secure, and scalable deployment with automatic HTTPS. ☁️
+- **Netlify Hosting**: Fast, secure, and scalable deployment with automatic HTTPS. ☁️
 - **Featured Files Section**: A dedicated page (`featured.html`) to highlight specific files from various folders, enhancing visibility of key documents. ⭐
 
 ---
 
 ## Demo 🌐
 
-Visit the live demo at [https://anson-drive.pages.dev/](https://anson-drive.pages.dev/) to explore the application. You can browse folders, search for files, use the admin page to generate metadata, and check out the new featured files section. 🚀
+Visit the live demo at [https://anson-drive.netlify.app/](https://anson-drive.netlify.app/) to explore the application. You can browse folders, search for files, use the admin page to generate metadata, and check out the new featured files section. 🚀
 
 ---
 
@@ -74,7 +74,7 @@ anson-drive/
 - **HTML5**: Structure for the web pages. 🏗️
 - **CSS3**: Styling with a dark theme, CSS Grid, and custom properties (`--variables`). 🎨
 - **JavaScript (ES6+)**: Frontend logic for dynamic rendering, event handling, and clipboard interactions. ⚙️
-- **Cloudflare Pages**: Hosting platform for deployment. ☁️
+- **Netlify**: Hosting platform for deployment. ☁️
 - **SVG Icons**: Used for folder icons, copy/check buttons, and scroll-to-top. 🖼️
 - **AI Tools**:
   - **ChatGPT**: Assisted in planning the project structure and features. 🧠
@@ -140,7 +140,7 @@ Each folder in the `public/` directory contains a `metadata.json` file with an a
 ### Prerequisites ✅
 
 - **Git**: To clone the repository. 📥
-- **Cloudflare Account**: For deployment to Cloudflare Pages. ☁️
+- **Netlify Account**: For deployment to Netlify. ☁️
 - A modern web browser (Chrome, Firefox, Edge, etc.). 🌐
 
 ### Installation 📦
@@ -169,7 +169,7 @@ Each folder in the `public/` directory contains a `metadata.json` file with an a
 
 2. Open `index.html` in a browser to view the Folders View, `featured.html` for featured files, or `admin.html` for metadata generation. 🖥️
 
-### Deploying to Cloudflare Pages ☁️
+### Deploying to Netlify ☁️
 
 1. **Push to GitHub**:
    - Push the project to the repository:
@@ -179,16 +179,16 @@ Each folder in the `public/` directory contains a `metadata.json` file with an a
      git push origin main
      ```
 
-2. **Set Up Cloudflare Pages**:
-   - Log in to [Cloudflare Pages](https://pages.cloudflare.com/). 🔐
+2. **Set Up Netlify**:
+   - Log in to [Netlify](https://app.netlify.com/). 🔐
    - Connect the GitHub repository: [https://github.com/ansonjaison/anson-drive](https://github.com/ansonjaison/anson-drive). 📥
    - Configure the build settings:
      - **Build command**: Not needed (static site). 🚫
      - **Output directory**: `/`. 📁
-   - Deploy the site. The URL will be `anson-drive.pages.dev`. 🌐
+   - Deploy the site. The URL will be `anson-drive.netlify.app`. 🌐
 
 3. **Custom Domain** (Optional):
-   - In Cloudflare, add a custom domain and configure a `CNAME` record pointing to `anson-drive.pages.dev`. 🌍
+   - In Netlify, add a custom domain and configure DNS settings accordingly. 🌍
 
 ---
 
@@ -253,7 +253,7 @@ Please adhere to the [Code of Conduct](CODE_OF_CONDUCT.md) (if present) and ensu
 - **File Uploads**: Enable file uploads directly from the admin page. 📤
 - **Advanced Search**: Support for regex or tag-based filtering. 🔍
 - **Light Theme**: Add a toggle for light/dark mode. 🌞
-- **Analytics**: Track page views and file downloads using Cloudflare Analytics. 📊
+- **Analytics**: Track page views and file downloads using Netlify Analytics. 📊
 - **Accessibility**: Improve ARIA attributes and keyboard navigation. ♿
 
 ---
@@ -269,7 +269,7 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 - **ChatGPT**: For helping plan the project structure and features. 🧠
 - **Gemini**: For providing code snippets and debugging support. 🤖
 - **Grok**: For refining code and optimizing logic. 🌟
-- **Cloudflare Pages**: For fast and reliable hosting. ☁️
+- **Netlify**: For fast and reliable hosting. ☁️
 - **Inter Font**: For the clean, modern typography used in the UI. ✍️
 - **SVG Icons**: From [SVGOMG](https://jakearchibald.github.io/svgomg/) for optimized icons. 🖼️
 
