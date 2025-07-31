@@ -172,5 +172,11 @@
     "caption": "MPOWER Power Communication Workshop",
     "tags": ["Soft Skills", "Communication", "Workshop"],
     "updated": "01-05-2023"
+  },
+  {
+    "filename": "Infosys - Python for Data Science.pdf",
+    "caption": "Infosys - Python for Data Science",
+    "tags": ["Infosys", "Python", "Data Science"],
+    "updated": "31-07-2025"
   }
 ]
